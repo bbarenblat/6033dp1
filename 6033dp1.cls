@@ -29,7 +29,7 @@
 %% 
 \NeedsTeXFormat{LaTeX2e}[1999/12/01]
 \ProvidesClass{6033dp1}
-    [2012/02/25 v1.0.0 MIT 6.033 design project]
+    [2012/04/14 v1.0.1 MIT 6.033 design project]
 \newif\ifdp@titlepage
 \DeclareOption{titlepage}{\dp@titlepagetrue}
 \DeclareOption{notitlepage}{\dp@titlepagefalse}
@@ -163,8 +163,6 @@
   \setcounter{secnumdepth}{0}
   \let\Itemize\itemize
   \renewcommand{\itemize}{\Itemize\setlength{\itemsep}{-0.67em}}
-  \let\Enumerate\enumerate
-  \renewcommand{\enumerate}{\Enumerate\setlength{\itemsep}{-0.67em}}
   \RequirePackage[normalem]{ulem}
   \RequirePackage[dvipdfm]{hyperref}
   \hypersetup{colorlinks,linkcolor=black,urlcolor=blue}
